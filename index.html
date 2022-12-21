@@ -12,9 +12,21 @@
 </head>
 <body>
     <h1  data-aos="fade-down">Hello Bootstrap</h1>
+
+    <p>Today is 
+        <script>
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+    
+    today = yyyy + "/"+ mm + '/' + dd;
+    document.write(today);
+        </script>
+    </p>
+    
     <ul data-aos="fade-up" data-aos-delay="500">
         <li><a href="11000.html">My homework</a></li>    
-
         <li><a href="1107200052.html">Kyla</a></li>       
         <li><a href="1108211096.html">1108211096</a></li>
         <li><a href="1110211088.html">1110211088</a></li>
